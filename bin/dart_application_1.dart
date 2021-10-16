@@ -1,15 +1,17 @@
 void main() {
-  var numbers = <int>[1, 2, 3, 4, 5];
+  start();
+  printUserInfo('userName', 'role');
+  print(getName());
+}
 
-  numbers.forEach((element) {
-    element = element * element;
+void start() => print('start');
 
-    print(element);
-  });
+void printUserInfo(String userName, String role, [String? email = '@mail']) {
+  print(userName);
+  print(role);
+  print(email);
+}
 
-  // for (var element in numbers) {
-  //   var square = element * element;
-
-  //   print('$element^2 = $square');
-  // }
+String getName() {
+  return 'Name';
 }
