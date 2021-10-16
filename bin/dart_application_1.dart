@@ -1,15 +1,15 @@
-import 'dart:io';
-
 void main() {
-  print("Enter integer:");
+  var numbers = <int>[1, 2, 3, 4, 5];
 
-  var number = int.parse(stdin.readLineSync() as String);
+  numbers.forEach((element) {
+    element = element * element;
 
-  if (number < 5) {
-    print('less than five');
-  } else if (number == 6) {
-    print(6);
-  } else {
-    print('equal or greater than five');
-  }
+    print(element);
+  });
+
+  // for (var element in numbers) {
+  //   var square = element * element;
+
+  //   print('$element^2 = $square');
+  // }
 }
