@@ -1,17 +1,15 @@
 void main() {
-  start();
-  printUserInfo('userName', 'role');
-  print(getName());
+  var article = Article();
+
+  article.title = '1';
+  article.body = '2';
+
+  print(article.getArticle());
 }
 
-void start() => print('start');
+class Article {
+  late String title;
+  late String body;
 
-void printUserInfo(String userName, String role, [String? email = '@mail']) {
-  print(userName);
-  print(role);
-  print(email);
-}
-
-String getName() {
-  return 'Name';
+  String getArticle() => '$body $title';
 }
