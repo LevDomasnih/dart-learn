@@ -1,8 +1,18 @@
 void main() {
-  const hexRedColor = 0xFFFF0000; // вычесляется сразу
-  //const hexRedColor = 0xFFFF0000.abs(); // вычесляется в runtime
+  // int -> double | .toDouble()
+  var intNum = 1;
+  var doubleNum = intNum.toDouble();
 
-  final hexRedColor2 = 0xFFFF0000.abs();
+  print(intNum);
+  print(doubleNum);
 
-  print(hexRedColor);
+  // double -> int | .round()
+  var doubleNum1 = 1.1;
+  var intNum1 = doubleNum1.round();
+
+  print(doubleNum1);
+  print(intNum1);
+
+  // int -> string | .toString()
+  print(doubleNum1.toString());
 }
